@@ -1,0 +1,19 @@
+body {
+	background-color: #424242;
+}
+
+#options_menu span {
+	color: #BFBFBF;
+}
+
+#options_menu span a {
+	color: #BFBFBF;
+}
+
+#menu {
+	color: #CCCCCC;
+}
+
+#button {
+	border: 1px solid #CCCCCC;
+}

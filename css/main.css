@@ -1,0 +1,96 @@
+body {
+	font-family: 'Inconsolata';
+	
+	-webkit-transition: background-color 0.5s ease;
+	transition: background-color 0.5s ease;
+}
+
+#options_menu {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+#options_menu span {
+	margin-left: 10px;
+	color: #404040;
+}
+
+#options_menu span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#options_menu span a {
+	text-decoration: none;
+	color: #404040;
+}
+
+#options_menu span a:hover {
+	text-decoration: underline;
+}
+
+#options_menu span:last-child {
+	margin-right: 95px;
+}
+
+span#share {
+	margin: 0;
+	width: 80px;
+}
+
+#share > ul {
+	max-height: 17px;
+	width: 80px;
+	overflow: hidden;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transition: max-height 1s;
+	transition: max-height 1s;
+}
+
+#share > ul:hover {
+	max-height: 110px;
+}
+
+#share > ul > li {
+	list-style-type: none;
+	padding: 0 0 3px 0;
+	height: 20px;
+}
+
+#share > ul > li:first-child:hover {
+	text-decoration: none;
+}
+
+#share > ul > li:hover {
+	text-decoration: underline;
+}
+
+#menu {
+	text-align: center;
+	color: #404040;
+}
+
+#button {
+	width: 125px;
+	padding: 10px 0 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #404040;
+}
+
+#button:hover {
+	cursor: pointer;
+}
+
+.noselect {
+    -moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

@@ -21,6 +21,15 @@ function applyStyle() {
 	}
 }
 
+//adjust link values so the sharer is sharing current URL
+function createOptionsMenu() {
+	var share = document.getElementById("share");
+	share.children[0].children[1].children[0].href = "http://reddit.com/submit/?url=" + document.URL; //reddit
+	share.children[0].children[2].children[0].href = "https://twitter.com/share?url=" + document.URL + "&text=TextCity%20-%20new%20minimalist%20text-based%20city%20builder"; //twitter
+	share.children[0].children[3].children[0].href = "https://www.facebook.com/sharer/sharer.php?u=" + document.URL; //facebook
+	share.children[0].children[4].children[0].href = "https://plus.google.com/share?url=" + document.URL; //google+
+}
+
 //creates the UI for the startup menu.
 function createStartupMenu() {
 	//welcome message and description

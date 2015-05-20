@@ -6,17 +6,26 @@
 		
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/game.css">
+		<link rel="stylesheet" type="text/css" href="css/notifications.css">
 		<link rel="dark stylesheet" type="text/css" href="css/themes/dark.css"> <!--Dark Theme-->
 		
 		<!--Javascript-->
 		<script src="script/menu.js"></script>
 		<script src="script/main.js"></script>
+		<script src="script/game.js"></script>
+		<script src="script/notifications.js"></script>
+		
+		<!--Libraries-->
+		<script src="lib/remove.js"></script>
+		<script src="lib/fade.js"></script>
+		<script src="lib/sleep.js"></script>
 		
 		<title>TextCity</title>
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="options_menu" class="noselect"> <!--Options menu on the bottom right of the screen. Allows changing of theme and other links.-->
+		<div id="wrapper" class="noselect">
+			<div id="options_menu"> <!--Options menu on the bottom right of the screen. Allows changing of theme and other links.-->
 				<span id="share">
 					<ul>
 						<li>share game</li>
@@ -26,8 +35,8 @@
 						<li><a target="_blank">google+</a></li>
 					</ul>
 				</span>
-				<span><a href="https://github.com/Drift-/TextCity/">github</a></span>
-				<span id="lights" onclick="changeTheme();">lights on</span>
+				<span><a href="https://github.com/Drift-/TextCity/" target="_blank">github</a></span>
+				<span id="lights" onclick="changeTheme();">light</span>
 				<span>restart</span>
 			</div>
 		</div>
@@ -41,7 +50,7 @@
 				}
 			</style>
 			<h1>Javascript</h1>
-			<p>TextCity uses javascript, which appears to be diabled.</p>
+			<p>TextCity uses javascript, which appears to be disabled.</p>
 			<p>Please enable javascript in order to continue.</p>
 		</noscript>
 		

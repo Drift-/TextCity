@@ -1,0 +1,17 @@
+/* Sidebar */
+
+#sidebar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	padding: 0 10px 0 10px;
+}
+
+#title {
+	color: #101010;
+}
+
+#tabs h2 {
+	color: #333333;
+}

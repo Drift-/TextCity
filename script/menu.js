@@ -4,10 +4,10 @@ var light = 1; //0 for light theme, 1 for dark theme
 function changeTheme() {
 	var light_button = document.getElementById("lights");
 	if (light === 0) {
-		light_button.innerHTML = "lights on";
+		light_button.innerHTML = "light";
 		light = 1; //lights are now dark
 	} else {
-		light_button.innerHTML = "lights off";
+		light_button.innerHTML = "dark";
 		light = 0; //lights are now light
 	}
 	applyStyle();
@@ -45,9 +45,9 @@ function createStartupMenu() {
 	var button = document.createElement("p"); //link to start playing the game
 	var button_text = document.createTextNode("Begin");
 	button.appendChild(button_text);
-	button.id = "button";
-	button.className = "noselect";
-	button.onclick = function() {};
+	button.id = "start_btn";
+	button.className = "noselect button";
+	button.onclick = function() {startGame();};
 	
 	//containing div
 	var div = document.createElement("div"); //contaning div

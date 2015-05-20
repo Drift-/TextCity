@@ -14,6 +14,18 @@ body {
 	color: #CCCCCC;
 }
 
-#button {
+.button {
 	border: 1px solid #CCCCCC;
+}
+
+#title {
+	color: #EFEFEF;
+}
+
+#notifications p {
+	color: #BFBFBF;
+}
+
+#tabs h2 {
+	color: #CCCCCC;
 }

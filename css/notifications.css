@@ -1,0 +1,11 @@
+#notifications {
+	width: 200px;
+	min-height: 375px;
+	top: 0px;
+	overflow: hidden;
+}
+
+#notifications p {
+	color: #404040;
+	font-size: 11pt;
+}

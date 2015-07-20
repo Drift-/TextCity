@@ -27,8 +27,11 @@ function createSidebar() {
 	document.getElementById("sidebar").appendChild(title);
 	
 	createTabs();
-	notifications.create();
+	notifications.create(); //create notifications area
 	notifications.log("test");
+	
+	document.getElementById("sidebar").style.opacity = 0;
+	fadeIn(document.getElementById("sidebar"), 2);
 }
 
 //creates the 'tabs' section of the sidebar
@@ -36,10 +39,11 @@ function createTabs() {
 	var tabs = document.createElement("div");
 	tabs.id = "tabs";
 	
-	var map = document.createElement("h2");
+	var map_tab = document.createElement("h2");
 	var map_txt = document.createTextNode("Map");
-	map.appendChild(map_txt);
-	tabs.appendChild(map);
+	map_tab.appendChild(map_txt);
+	tabs.appendChild(map_tab);
+	map.create();
 	
 	var budget = document.createElement("h2");
 	var budget_txt = document.createTextNode("Budget");

@@ -29,3 +29,15 @@ body {
 #tabs h2 {
 	color: #CCCCCC;
 }
+
+#skyline {
+	color: #BFBFBF;
+}
+
+#map {
+	border: 1px solid #ffffff;
+}
+
+#map h3 {
+	color: #CCCCCC;
+}

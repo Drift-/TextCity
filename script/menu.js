@@ -11,6 +11,7 @@ function changeTheme() {
 		light = 0; //lights are now light
 	}
 	applyStyle();
+	map.skyline.draw();
 }
 
 //applies and disables the dark theme stylesheet

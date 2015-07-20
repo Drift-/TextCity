@@ -13,8 +13,11 @@ var notifications = {
 		var mess_text = document.createTextNode(message);
 		mess.appendChild(mess_text);
 		logger.insertBefore(mess, logger.firstChild); //insert message as first child
-		logger.firstChild.style.opacity = 0.0;
-		fadeIn(logger.firstChild, 2);
+		
+		if (logger.lastChild != logger.firstChild) { //if it is the first message, do not fade it in; if it is not first message, fade the message in.
+			logger.firstChild.style.opacity = 0.0;
+			fadeIn(logger.firstChild, 2);
+		}
 		
 		notifications.clear();
 	},
